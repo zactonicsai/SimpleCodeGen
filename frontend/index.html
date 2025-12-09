@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chroma + Ollama Code Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100">
+  <div class="max-w-4xl mx-auto py-10 px-4">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-slate-800 mb-2">
+        Chroma + Ollama Code Generator
+      </h1>
+      <p class="text-slate-600">
+        Simple HTML forms that send your prompt to a local FastAPI backend using
+        ChromaDB + Ollama to generate custom code.
+      </p>
+    </header>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <a href="code-generator.html"
+         class="block bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold mb-2">General Code Generator</h2>
+        <p class="text-sm text-slate-600">
+          Describe what you want (e.g., “React form with Tailwind”),
+          choose a language, and get generated code.
+        </p>
+      </a>
+
+      <!-- add more pages later, like component generator, API generator, etc. -->
+      <div class="block bg-white shadow rounded-xl p-6 border border-dashed border-slate-300">
+        <h2 class="text-xl font-semibold mb-2">More templates (todo)</h2>
+        <p class="text-sm text-slate-600">
+          You can duplicate <code>code-generator.html</code> and create
+          specialized forms for APIs, UI components, tests, etc.
+        </p>
+      </div>
+    </div>
+
+    <footer class="mt-10 text-xs text-slate-500">
+      Backend expected at <code>http://localhost:8000</code>.
+    </footer>
+  </div>
+</body>
+</html>
